@@ -189,3 +189,21 @@ img {
   }
 }
 
+fieldset{
+  font-size: 15px;
+  margin-inline: 150px;
+  background-color: rgb(117, 226, 117);
+  border-color: black;
+  border-radius: 30px;
+  text-align: center;
+  opacity: 0.85;
+}
+.recuadro{
+  background: rgb(117, 226, 117);
+  text-align: center;
+  opacity: 0.85;
+}
+.perrito{
+  border-radius: 150px;
+  text-align: center;
+}
