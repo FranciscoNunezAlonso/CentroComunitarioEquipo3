@@ -1,37 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <div>
+    <a href="/index.html"> <img src="https://cdn-icons-png.flaticon.com/512/181/181657.png" width="18px" height="18px" alt="imginicio">Inicio</a>
+    <br>
+
+  </nav>
+  </div>
 <head>
+  <h1 class="datos">Datos personales voluntario</h1>
+  <body>
+    
+  </body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/centrocomunitariostyle.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
     <style>
-        .recuadro{
-          background-color: aliceblue;
+        
+        .datos{
+          font-family: century;
+          background-color: rgb(188, 255, 80);
+          text-align: center;
+          border-radius: 100px;
+
         }
+        .nombre1{
+          font-family: century;
+          background-color: violet;
+        
+        }
+        .nombre{
+          border-radius: 100px;
+        }
+        .edad1{
+          font-family: century;
+          background-color: violet;
+        }
+        .edad{
+          border-radius: 100px;
+        }
+        .teléfono1{
+          font-family: century;
+          background-color: violet;
+        }
+        .teléfono{
+          border-radius: 100px;
+        }
+        .correo1{
+          font-family: century;
+          background-color: violet;
+        }
+        .correo{
+          border-radius: 100px;
+        }
+        .enviar{
+          font-family: century;
+          font-weight: bold;
+          border-radius: 100px;
+          background-color: aqua;
+        }
+      
       </style>
 </head>
 <body>
-    <h2>Datos personales voluntario</h2>
-    <nav>
-        <a href="/index.html">Inicio</a>
-    </nav>
-    <fieldset id="campo" class="recuadro">
-        <label for="nombre" class="formularios">Nombre completo</label>
+    <fieldset>
+        <label for="nombre" class="nombre1">Nombre completo</label>
         <br>
-        <input type="text" id="nombre">
+        <input type="text" class="nombre" id="nombre">
         <br>
-        <label for="edad"class="formularios">Edad</label>
+        <label for="edad"class="edad1">Edad</label>
         <br>
-        <input type="text" id="edad">
+        <input type="text" class="edad" id="edad">
         <br>
-        <label for="teléfono" class="formularios">Teléfono con clave lada</label>
+        <label for="teléfono" class="teléfono1">Teléfono con clave lada</label>
         <br>
-        <input type="text" id="teléfono">
+        <input type="text" class="teléfono" id="teléfono">
         <br>
-        <label for="correo" class="formularios">Correo electrónico</label>
+        <label for="correo" class="correo1">Correo electrónico</label>
         <br>
-        <input type="text" id="correo">
-     </fieldset>
-</body>
+        <input type="text" class="correo" id="correo">
+        <hr>
+        <button class="enviar">Enviar</button>
+      </fieldset>
+     <nav></nav>
+    </body>
 </html>

@@ -1,46 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <div>
+    <a href="/index.html"> <img src="https://cdn-icons-png.flaticon.com/512/181/181657.png" width="18px" height="18px" alt="imginicio">Inicio</a>
+    <br>
+
+  </nav>
+  </div>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/centrocomunitariostyle.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css"
+    <title></title>
     <style>
-        .recuadro{
-          background-color: aliceblue;
+        .datosagendar{
+          font-family: century;
+          background-color: rgb(188, 255, 80);
+          text-align: center;
+          border-radius: 100px;
+
         }
+        .nombredueño1{
+          font-family: century;
+          background-color: rgb(255, 172, 47);
+        }
+        .nombredueño{
+          border-radius: 100px;
+        }
+        .nombremascota1{
+          font-family: century;
+          background-color: rgb(255, 172, 47);
+        }
+        .nombremascota{
+          border-radius: 100px;
+        }
+        .tipomascota1{
+          font-family: century;
+          background-color: rgb(255, 172, 47);
+        }
+        .tipomascota{
+          border-radius: 100px;
+        }
+        .género1{
+          font-family: century;
+          background-color: rgb(255, 172, 47);
+        }
+        .género{
+          border-radius: 100px;
+        }
+        .fecha1{
+          font-family: century;
+          background-color: rgb(255, 172, 47);
+        }
+        .fecha{
+          border-radius: 100px;
+        }
+        .hora1{
+          font-family: century;
+          background-color: rgb(255, 172, 47);
+        }
+        .hora{
+          border-radius: 100px;
+        }
+        .enviar{
+          font-family: century;
+          background-color: aqua;
+          border-radius: 100px;
+          font-weight: bold;
+        }
+       
       </style>
 </head>
 <body>
-    <h2>Datos para agendar cita</h2>
-    <nav>
-        <a href="/index.html">Volver al inicio</a>
-    </nav>
-    <fieldset class="recuadro">
- <label for="nombre" class="recuadro">Nombre completo dueño</label>
+    <h2 class="datosagendar">Datos para agendar cita</h2>
+
+<fieldset>
+
+ <label for="nombre" class="nombredueño1">Nombre completo dueño</label>
  <br>
- <input type="text" id="nombre">
+ <input type="text" class="nombredueño" id="nombre">
  <br>
- <label for="nombre" class="recuadro">Nombre mascota</label>
+ <label for="nombre" class="nombremascota1">Nombre mascota</label>
  <br>
- <input type="text" id="nombre">
+ <input type="text" class="nombremascota" id="nombre">
  <br>
- <label for="nombre" class="recuadro">Tipo mascota</label>
+ <label for="nombre" class="tipomascota1">Tipo mascota</label>
  <br>
- <input type="text" id="nombre">
+ <input type="text" class="tipomascota" id="nombre">
  <br>
  <input type="radio" name="género" id="hembra" value="hembra">
- <label for="hembra" class="recuadro">Hembra</label>
+ <label for="hembra">Hembra</label>
  <input type="radio" bame="género" id="macho" value="macho">
- <label for="macho" class="recuadro">Macho</label>
+ <label for="macho">Macho</label>
  <br>
- <label for="fecha" class="recuadro">Fecha cita</label>
- <input type="date">
+ <label for="fecha" class="fecha1">Fecha cita</label>
+ <input type="date" class="fecha">
  <br>
- <label for="hora" class="recuadro">Horario</label>
- <input type="time">
- <br>
- <button>Enviar</button>
+ <label for="hora" class="hora1">Horario</label>
+ <input type="time" class="hora">
+ <hr>
+ <button class="enviar">Enviar</button>
 </fieldset>
+
 </body>
 </html>
