@@ -3,36 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.pngmart.com/files/16/Puppy-Dog-Face-PNG-Photos.png">
     <title>VisitasComunitarias</title>
-    <link rel="stylesheet" href="css/centrocomunitariostyle.css">
-    <style>
-        .recuadro{
-          background-color: aliceblue;
-        }
-      </style>
-    
+    <link rel="stylesheet" href="./css/centrocomunitariostyle.css">   
 </head>
 <body>
-    <h2>Visitas comunitarias</h2>
     <nav>
-        <a href="/index.html">Inicio</a>
+        <hr>
+        <h2>Visitas comunitarias</h2>
     </nav>
+    <nav class="navbar">
+        <a href="/centrocomunitario/index.html">Inicio</a>
+        <a href="#contact_section">Contacto</a>
+        <a href="#galery_section">Galeria</a>
+        <a href="#services_section">Servicios</a>
+    </nav>
+    <br>
+<form>
     <Fieldset class="recuadro">
         <br>
         <label for="Nombre" class="recuadro">Ingresa tu nombre completo</label>
+        <br>
         <input type="text" id="nombre">
         <hr>
         <div class="recuadro">
+            <label for="Fecha" class="recuadro">Ingresa tu correo electrónico</label>
+            <br>
+            <input type="text" id="correo">
+        </div>
+        <div class="recuadro">
+            <label for="Fecha" class="recuadro">Repite el correo electrónico</label>
+            <br>
+            <input type="text" id="repitecorreo">
+        </div>
+        <hr>
+        <div class="recuadro">
             <label for="Fecha" class="recuadro">Ingresa la fecha de tu visita</label>
+            <br>
             <input type="date" id="Fecha">
         </div>
         <hr>
         <div class="recuadro">
             <label for="Fecha" class="recuadro">Ingresa la hora de tu visita</label>
+            <br>
             <input type="time">
         </div>
+        <hr>
+        <div class="recuadro">
+            <label for="Fecha" class="recuadro">Estas de acuedo en recibir notificaiones por correo</label>
+            <input type="checkbox">
+        </div>
+        <hr>
+        <div>
+            <input type="submit" value="enviar">
+        </div>
     </Fieldset>
-
+</form>
+    <br>
+    <div class="perrito">
+    <img class="perrito" src="https://tvazteca.brightspotcdn.com/38/e6/7b33cdd042d5a378d56a7f81fa73/perritos-primeros-auxilios.jpg" alt="perrito" height="300px" width="600px">
+    </div>
     
     
 </body>
