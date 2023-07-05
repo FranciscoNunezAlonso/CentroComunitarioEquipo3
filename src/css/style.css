@@ -1,0 +1,191 @@
+Copy code
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  background-image: url(https://media.istockphoto.com/id/1011583734/vector/monochrome-black-and-white-dog-cat-pet-animal-paw-foot-hand-drawn-ink-sketch-seamless.jpg?s=612x612&w=0&k=20&c=JSFAQeJvgctndBMWWjBA7qeOME7crE51XBFf4v_QooE=);
+  font-family: 'Nunito';
+  font-size: 18px;
+}
+
+html {
+  height: 100%;
+}
+
+.grid-container > * {
+  text-align: center;
+  padding: 10px;
+  grid-template-columns:repeat(12, 1fr); /* esta seccion sirve para que se respete cierto valores, en este caso el de la navbar*/
+}
+
+/*header*/
+.header {
+  grid-area: header;
+  background-image: url(https://media.timeout.com/images/103962156/1920/1080/image.jpg);
+}
+
+/*barra de navegacion*/
+.navbar {
+  display: grid;
+  grid-column: span 3; /* esta seccion sirve para que abarque toda la pantalla*/
+  background-color: grey;
+  position: sticky; /*esta seccion sirve para que se quede fija la barra de navegacion */
+  top: 0; /*esta seccion sirve para que respete la posicion en la que se encuentra */
+}
+
+nav a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 3px;
+}
+
+a:link {
+  color: aliceblue;
+}
+
+a:hover {
+  color: rgb(3, 3, 3);
+  background-color: rgb(235, 234, 234);
+  border-radius: 2px;
+  padding: 3px;
+}
+/* estructura del cuerpo*/
+
+.background-opacity{
+  background-color: rgba(113, 248, 100, 0.9)
+}
+
+.main {
+  grid-area: main;
+  padding: 2em;
+}
+
+.info {
+  grid-area: info;
+  padding-right: 2em;
+}
+
+/*mapa de google responsivo*/
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.galery {
+  grid-area: galery;
+}
+
+/*imagen responsiva con dimensiones establecidas */
+img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  max-height: 200px;
+  padding: 2px;
+}
+
+.services {
+  grid-area: services;
+  padding: 2rem;
+}
+
+
+/*tabla*/
+.services2 {
+  grid-area: services2;
+  padding: 2em;
+}
+
+.services2 a {
+  color: rgb(2, 9, 15);
+  text-decoration: none;
+  padding: 2px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: goldenrod;
+}
+
+/*Resoluciones de pantalla o media query*/
+
+/*Teléfono*/
+.grid-container {
+  display: grid;
+  
+  gap: 10px;
+  grid-template-areas:
+    "header"
+    "navbar"
+    "main"
+    "info"
+    "galery"
+    "services"
+    "services2"
+    "footer";
+}
+
+/*Solucion temporal de ruptura de navbar*/
+@media(max-width:322px){
+  .grid-container{
+   
+    justify-content: center;
+  }
+  .navbar{
+    grid-column:1 / span 1;
+  }
+}
+
+/*Tablet*/
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "navbar"
+      "main"
+      "info"
+      "galery"
+      "services"
+      "services2"
+      "footer";
+  }
+}
+@media(max-width:899px){
+  .navbar{
+    grid-column: span 1;
+  }
+}
+
+
+
+/*Escritorio*/
+@media (min-width: 900px) {
+  .grid-container {
+    margin: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px auto;
+    grid-template-areas:
+      "header header header"
+      "navbar navbar navbar"
+      "galery main info"
+      "services services services2"
+      "footer footer footer";
+  }
+}
+

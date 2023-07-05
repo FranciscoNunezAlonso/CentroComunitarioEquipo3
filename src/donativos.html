@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/centrocomunitariostyle.css">
+    <title>Donativos</title>
+    <style>
+      .recuadro{
+        background-color: aliceblue;
+      }
+    </style>
+</head>
+<body>
+  <h2>Donaciones</h3>
+  <nav>
+    <a href="/index.html">Inicio</a>
+</nav>
+    
+    <fieldset class="recuadro">
+    <form action="" method="get" class="formularios">
+        <div class="recuadro">
+          <label for="name" class="formularios">Ingresa tu nombre:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <br>
+        <div class="recuadro">
+          <label for="email" class="formularios">Ingresa tu Correo:</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+      
+      <label for="hobbies" class="formularios">Cantidad a donar:</label>
+      <br>
+      <label for="donativos" class="formularios">$1</labe>
+      <input type="range" required min="1" max="100">
+      <label for="donativos" class="formularios">$100</label>
+      <label></label>
+            <div class="formularios">
+                <input type="submit" value="Donativo anonimo">
+                <input type="submit" value="Donativo visible">
+              </div>
+    </form>
+        </fieldset>
+</body>
+</html>
